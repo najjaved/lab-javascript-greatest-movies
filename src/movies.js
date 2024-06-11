@@ -67,7 +67,9 @@ function dramaMoviesScore(moviesArray) {
 syntax: array.slice(start, end) */
 
 function orderByYear(moviesArray) {
-    //const arrayCopy =  moviesArray.slice(); 
+ /* const arrayCopy =  moviesArray.slice(); 
+	arrayCopy.sort((a, b) => (a.year !== b.year ? a.year - b.year : a.title.localeCompare(b.title))); 
+	return arrayCopy;    */
     return moviesArray.toSorted((a, b) => {
         // If two movies have the same year, order them in alphabetical order by their title
         if (a.year === b.year) {
